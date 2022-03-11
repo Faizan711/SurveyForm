@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+    <form action="" id="form">
+        <div class="heading text-center">
+            <h1>Welcome to MySurveyForm</h1>
+            <p>This is one of the best forms you will find on internet!!!</p>
+        </div>
+        <div class="p-info">
+            <fieldset>
+                <legend class="text-center">Personal Details</legend>
+                <div class="form-item">
+                    <label for="name">Name: </label>
+                    <input type="text" name="user_name" id="name-label" placeholder="Enter your name">
+                </div>
+                <div class="form-item">
+                    <label for="name">Address: </label>
+                    <input type="text" name="user_address" id="address-label" placeholder="Enter your Address">
+                </div>
+                <div class="form-item">
+                    <label for="name">Email: </label>
+                    <input type="email" name="user_email" id="email-label" placeholder="Enter your Email">
+                </div>
+                <div class="form-item">
+                    <label for="name">Number: </label>
+                    <input type="phone" name="user_number" id="number-label" placeholder="Enter your Number">
+                </div>
+                <div>
+                    <p>Please select your Profession:</p>
+                    <input type="radio" name="profession" value="student">
+                    <label for="student">Student</label><br>
+                    <input type="radio" name="profession" value="student">
+                    <label for="job">Job</label><br>
+                    <input type="radio" name="profession" value="student">
+                    <label for="business">Business</label><br>
+                    <input type="radio" name="profession" value="unemp">
+                    <label for="unemp">Unemployed</label>
+                </div>
+            </fieldset>
+        </div>
+        <div class="desc">
+            <fieldset>
+                <legend class="text-center">Description Section</legend>
+                <div>
+                    <p>Enter your Description</p>
+                    <textarea name="desc" cols="60" rows="5" placeholder="Enter your description" class="ta"></textarea>
+                </div>
+                <div>
+                    <p>Describe your Skills and Hobbies</p>
+                    <textarea name="desc" cols="60" rows="5" placeholder="Enter your Skills and Hobbies"
+                        class="ta"></textarea>
+                </div>
+            </fieldset>
+        </div>
+        <div class="desc">
+            <fieldset>
+                <legend class="text-center">Your Speciality</legend>
+                <input type="checkbox" id="C" name="C" value="C" />
+                <label>C</label> <br>
+                <input type="checkbox" id="Java" name="Java" value="Java" checked=?yes? />
+                <label>Java</label> <br>
+                <input type="checkbox" id="Python" name="Python" value="Python" />
+                <label>Python</label> <br>
+                <input type="checkbox" id="PHP" name="PHP" value="PHP" />
+                <label>PHP</label>
+            </fieldset>
+        </div>
+        <div class="rating">
+            <fieldset>
+                <legend class="text-center">Rate our Survey Form</legend>
+                <!-- how to create a star-rating  -->
+                <div class="star-rating">
+                    <input type="radio" name="stars" id="star-a" value="5" />
+                    <label for="star-a"></label>
+
+                    <input type="radio" name="stars" id="star-b" value="4" />
+                    <label for="star-b"></label>
+
+                    <input type="radio" name="stars" id="star-c" value="3" />
+                    <label for="star-c"></label>
+
+                    <input type="radio" name="stars" id="star-d" value="2" />
+                    <label for="star-d"></label>
+
+                    <input type="radio" name="stars" id="star-e" value="1" />
+                    <label for="star-e"></label>
+                </div>
+            </fieldset>
+        </div>
+        <input type="submit" value="submit" id="btn">
+    </form>
+</body>
+
+</html>
