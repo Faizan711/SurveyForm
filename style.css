@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Syne Mono', monospace;
+    /* font-size: 1.2rem; */
+    box-sizing: border-box;
+}
+body{
+    margin: 20px 0px;
+    background-color: rgb(211, 250, 238);
+}
+#form{
+    margin-top: 20px;
+    width: 80%;
+    margin: auto;
+    border-radius: 10px;
+    border: 1px solid aqua;
+    background-color: rgba(152, 160, 158, 0.52);
+    padding: 10px 20px;
+}
+.heading{
+    padding-bottom: 20px;
+}
+.form-item{
+    margin-bottom: 10px;
+}
+.text-center{
+    text-align: center;
+}
+.p-info{
+    font-size: 25px;
+    margin: 0px auto;
+}
+fieldset{
+    border: 1px solid aqua;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.form-item input{
+    padding: 5px 20px;
+    max-width: 50%;
+    outline: none;
+    border: 2px solid grey;
+    border-radius: 5px;
+}
+textarea{
+    padding: 10px;
+    outline: none;
+    border: 2px solid grey;
+    border-radius: 5px;
+}
+
+/* how to create a star-rating  */
+/* use reverse flexbox to take advantage of flex-direction: reverse */
+.rating{
+    font-size: 20px;
+    font-weight: 500;
+}
+.desc{
+    font-size: 25px;
+}
+.star-rating {
+    display: flex;
+    align-items: center;
+    width: 160px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: 5px auto;
+    position: relative;
+  }
+  /* hide the inputs */
+  .star-rating input {
+    display: none;
+  }
+  /* set properties of all labels */
+  .star-rating > label {
+    width: 30px;
+    height: 30px;
+    font-family: Arial;
+    font-size: 30px;
+    transition: 0.2s ease;
+    color: orange;
+  }
+  /* give label a hover state */
+  .star-rating label:hover {
+    color: #ff69b4;
+    transition: 0.2s ease;
+  }
+  .star-rating label:active::before {
+    transform:scale(1.1);
+  }
+  
+  /* set shape of unselected label */
+  .star-rating label::before {
+    content: '\2606';
+    position: absolute;
+    top: 0px;
+    line-height: 26px;
+  }
+  /* set full star shape for checked label and those that come after it */
+  .star-rating input:checked ~ label:before {
+    content:'\2605';
+  }
+  
+  @-moz-document url-prefix() {
+    .star-rating input:checked ~ label:before {
+    font-size: 36px;
+    line-height: 21px;
+    }
+  }  
+
+
+#btn{
+    padding: 5px 15px;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+#btn:hover{
+    background-color: gray;
+}
